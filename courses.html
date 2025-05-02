@@ -1,0 +1,90 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ForexChain | Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f6fa;
+      color: #2f3640;
+    }
+    header {
+      background: #0984e3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .course {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .course:hover {
+      transform: translateY(-5px);
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+    }
+    h3 {
+      margin: 10px 0 5px;
+    }
+    .vip {
+      background: #ffeaa7;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ForexChain Courses</header>
+
+  <section class="courses">
+    <div class="course">
+      <span class="vip">Free</span>
+      <h3>Forex Trading Basics</h3>
+      <video controls>
+        <source src="assets/videos/forex_basics.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="course">
+      <span class="vip">Free</span>
+      <h3>Python Programming</h3>
+      <video controls>
+        <source src="assets/videos/python_course.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="course">
+      <span class="vip">Free</span>
+      <h3>AI Trading with Python</h3>
+      <video controls>
+        <source src="assets/videos/ai_trading.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+</body>
+  </html>
+  
