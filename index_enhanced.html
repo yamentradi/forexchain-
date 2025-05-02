@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForexChain Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://i.imgur.com/QW2DQ4V.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #b689f3;
+      font-size: 3em;
+    }
+    .course-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .course {
+      background-color: #222;
+      border-radius: 15px;
+      width: 300px;
+      padding: 15px;
+      box-shadow: 0 0 15px #9b59b6;
+      position: relative;
+    }
+    .course img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .course h3 {
+      color: #fff;
+    }
+    .course iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+    .vip-locked {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .unlock-btn {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #9b59b6;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 0.9em;
+    }
+    .contact-buttons a {
+      color: #fff;
+      background-color: #9b59b6;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 0 10px;
+      display: inline-block;
+    }
+  </style>
+  <script>
+    function unlockVIP() {
+      document.getElementById("vip-lock").style.display = "none";
+    }
+  
+  function filterCourses(category) {
+    document.querySelectorAll('.course').forEach(course => {
+      if (category === 'all' || course.classList.contains(category)) {
+        course.style.display = 'block';
+      } else {
+        course.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+
+<script>
+  function updateProgress() {
+    document.querySelectorAll('.progress-bar').forEach(bar => {
+      bar.style.width = bar.getAttribute('data-progress') + '%';
+    });
+  }
+  function rate(stars, id) {
+    alert('You rated ' + stars + ' stars for course ' + id);
+  }
+  function toggleTheme() {
+    document.body.classList.toggle("light");
+  }
+
+  function filterCourses(category) {
+    document.querySelectorAll('.course').forEach(course => {
+      if (category === 'all' || course.classList.contains(category)) {
+        course.style.display = 'block';
+      } else {
+        course.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+<style>
+  .progress-container {
+    background: #333;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .progress-bar {
+    height: 10px;
+    background: #9b59b6;
+    width: 0%;
+    transition: width 1s ease;
+  }
+  .rating {
+    margin-top: 10px;
+  }
+  .rating span {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: gold;
+  }
+  .filter-bar {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .filter-bar button {
+    background: #9b59b6;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  body.light {
+    background: white !important;
+    color: #111 !important;
+  }
+  body.light .course, body.light header, body.light .footer {
+    background: #eee !important;
+    color: #111 !important;
+  }
+</style>
+
+</head>
+
+<body onload="updateProgress()">
+  <div style="text-align:right;padding:10px 20px;background:#111;color:white;">
+    <span id="bitsDisplay">You have <strong>800 Bits</strong></span>
+    <button onclick="toggleTheme()" style="margin-left:20px;padding:5px 10px;">Toggle Theme</button>
+  </div>
+
+  <header>
+    <h1>Welcome to ForexChain Academy</h1>
+    <p>Learn. Grow. Succeed. Powered by Yamen</p>
+    <div class="contact-buttons">
+      <a href="https://wa.me/201148642110">WhatsApp Support</a>
+      <a href="https://t.me/memo2304">Telegram Help</a>
+      <a class="unlock-btn" href="https://t.me/memo2304" target="_blank">طلب تفعيل حسابي</a>
+    </div>
+  </header>
+
+  
+<div class="filter-bar">
+  <button onclick="filterCourses('all')">All</button>
+  <button onclick="filterCourses('trading')">Trading</button>
+  <button onclick="filterCourses('programming')">Programming</button>
+  <button onclick="filterCourses('ai')">AI</button>
+</div>
+<section class="course-section">
+
+    <div class="course trading">
+      <img src="https://i.imgur.com/Udv2RSo.jpg" alt="Trading Course">
+      <h3>Trading with Hermes</h3>
+      <iframe src="https://www.youtube.com/embed/SfLV8hD7zX4" frameborder="0" allowfullscreen></iframe>
+      <div class="progress-container"><div class="progress-bar" data-progress="70"></div></div>
+      <div class="rating">Rate: <span onclick="rate(1, this)">★</span><span onclick="rate(2, this)">★</span><span onclick="rate(3, this)">★</span><span onclick="rate(4, this)">★</span><span onclick="rate(5, this)">★</span></div>
+    </div>
+    <div class="course trading">
+      <img src="https://i.imgur.com/4AiXzf8.jpg" alt="Programming Course">
+      <h3>Intro to Programming</h3>
+      <iframe src="https://www.youtube.com/embed/Z1Yd7upQsXY" frameborder="0" allowfullscreen></iframe>
+      <div class="progress-container"><div class="progress-bar" data-progress="70"></div></div>
+      <div class="rating">Rate: <span onclick="rate(1, this)">★</span><span onclick="rate(2, this)">★</span><span onclick="rate(3, this)">★</span><span onclick="rate(4, this)">★</span><span onclick="rate(5, this)">★</span></div>
+    </div>
+    <div class="course trading">
+      <img src="https://i.imgur.com/l49aYS3.jpg" alt="AI Trading">
+      <h3>AI in Trading <span style="color: gold;">[VIP]</span></h3>
+      <div class="vip-locked" id="vip-lock">
+        هذا الكورس خاص بـ VIP<br />
+        <button onclick="unlockVIP()" class="unlock-btn">أنا مفعل</button>
+      </div>
+      <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" frameborder="0" allowfullscreen></iframe>
+      <div class="progress-container"><div class="progress-bar" data-progress="70"></div></div>
+      <div class="rating">Rate: <span onclick="rate(1, this)">★</span><span onclick="rate(2, this)">★</span><span onclick="rate(3, this)">★</span><span onclick="rate(4, this)">★</span><span onclick="rate(5, this)">★</span></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 ForexChain by Yamen. All rights reserved.</p>
+    <p>Contact: 01148642110</p>
+  </div>
+</body>
+</html>
