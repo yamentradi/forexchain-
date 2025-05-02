@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ForexChain Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      background: rgba(0,0,0,0.7);
+      font-weight: bold;
+    }
+    .welcome {
+      text-align: center;
+      padding: 10px;
+      background: #1e1e2f;
+    }
+    .popup {
+      background: #22c55e;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 20px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .vip {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: gold;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background: #7c3aed;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .button:hover {
+      background: #a78bfa;
+    }
+    .stars {
+      margin-top: 10px;
+      color: gold;
+    }
+    .students {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .owner {
+      text-align: center;
+      padding: 10px;
+    }
+    .owner img {
+      width: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .telegram {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .telegram a {
+      background: #1d4ed8;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Welcome to Yamen's ForexChain Courses
+</header>
+
+<div class="welcome">ابدأ رحلتك التعليمية واجمع النقاط واحصل على خصومات!</div>
+<div class="popup">عرض خاص: استخدم نقاطك للحصول على خصم 100% على كورس VIP!</div>
+
+<div class="container">
+  <div class="card">
+    <img src="https://i.imgur.com/JkYmbkG.png" alt="Trading Course">
+    <h3>Trading Course</h3>
+    <p>تعلم أساسيات التداول والاستراتيجيات خطوة بخطوة.</p>
+    <div class="stars">⭐⭐⭐⭐</div>
+    <div class="students">3400 طالب</div>
+    <button class="button" onclick="alert('تمت إضافة 100 Bits!')">ابدأ الكورس</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/qAO1n1O.png" alt="Programming Course">
+    <h3>Programming Course</h3>
+    <p>تعلم البرمجة من الصفر حتى بناء مشاريع حقيقية.</p>
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="students">2750 طالب</div>
+    <button class="button" onclick="alert('تمت إضافة 100 Bits!')">ابدأ الكورس</button>
+  </div>
+
+  <div class="card">
+    <span class="vip">VIP</span>
+    <img src="https://i.imgur.com/y7PAiEG.png" alt="AI Trading">
+    <h3>AI Trading</h3>
+    <p>إتقان أدوات الذكاء الاصطناعي لتداول آلي احترافي.</p>
+    <div class="stars">⭐⭐⭐⭐</div>
+    <div class="students">900 طالب</div>
+    <button class="button" onclick="alert('تواصل مع المدرب للحصول على الشهادة.')">إنهاء الكورس</button>
+  </div>
+</div>
+
+<div class="telegram">
+  <p>للحصول على الشهادة أو الدعم الفني، تواصل معنا:</p>
+  <a href="https://t.me/memo2304" target="_blank">تواصل عبر Telegram</a>
+</div>
+
+<div class="owner">
+  <img src="https://i.imgur.com/y6vMFUE.jpeg" alt="Yamen" />
+  <p>صاحب المنصة: Yamen</p>
+</div>
+
+<footer>
+  ForexChain © 2025 - All rights reserved
+</footer>
+
+</body>
+</html>
